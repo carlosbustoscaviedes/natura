@@ -1,0 +1,54 @@
+.contenedor_principal_home {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor_botones {
+    width: auto;
+    display: table;
+    margin: 40px auto 0px auto;
+}
+
+.base_contenido {
+    width: 100%;
+    display: table;
+    text-align: center;
+}
+
+.tamaño_imagen {
+    width: 160px;
+}
+
+.left_lts {
+    margin-left: 60px;
+}
+
+.base_boton_lst {
+    float: left;
+    text-align: center;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.base_boton_lst:hover {
+    transform: scale(0.9);
+}
+
+.texto_ingreso {
+    font-size: 16px;
+    margin-bottom: 4px;
+    color: #d40150;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 18px;
+}
+
+.contenedor_imagen {
+    width: 100%;
+    height: 95vh;
+    background-image: url('https://sobreplanos.s3.amazonaws.com/uploads/real_estate_attachment/picture/11781/bulevar_apartamento_modelo_1.jpg');
+    background-size: cover;
+}

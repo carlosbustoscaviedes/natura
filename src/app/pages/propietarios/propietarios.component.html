@@ -1,0 +1,77 @@
+<app-navbar></app-navbar>
+
+<div class="contenedor_deuda" *ngIf="cerrarDeuda">
+    <form class="formulario_deuda">
+
+        <p class="icono_cerrar_deuda" (click)="icono_cerrar()">x</p>
+
+        <h1 class="deuda_administracion">Deuda Administracion 2023</h1>
+        <hr class="linea_deuda_lts">
+        <div class="mb-3">
+            <label class="texto_indicativo">Meses de mora</label>
+            <select class="form-select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="texto_indicativo">Deuda Acumulada</label>
+            <input type="text" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <label class="texto_indicativo">Deuda Total</label>
+            <input type="text" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+            <button class="btn btn-danger">Registrar Deuda</button>
+        </div>
+    </form>
+</div>
+
+
+
+
+
+
+
+<div class="container">
+    <img src="./assets/img/volver.png" class="logo_volver" (click)="volver_home()">
+    <img src="./assets/img/abundaralogo.png" class="logo_vivienda">
+    <h1 class="titulo_resgitros_ltsx">Registros propietarios conjunto residencial</h1>
+    <hr class="linea_divisora">
+    <button class="registrar_nuevo btn btn-primary" (click)="agregar_nuevo()">Agregar Nuevo</button>
+
+    <div class="contenido_tablas">
+        <div class="fila_informacion btn" *ngFor="let personas of propietariosRegistrados; let i = index">
+            <div class="base_1_tabla">
+                <p class="nombre_propietario">{{ personas.nombre }}</p>
+            </div>
+            <div class="base_2_tabla">
+                <a class="actualizar_registro" (click)="ver_informacion( personas.id )">Ver información</a>
+            </div>
+            <div class="base_3_tabla">
+                <a class="actualizar_registro" (click)="actualizar( personas.id )">Editar registro</a>
+            </div>
+            <div class="base_4_tabla">
+                <a class="actualizar_registro" (click)="borrarRegistro( personas.id, i )">Borrar registro</a>
+            </div>
+            <div class="base_5_tabla">
+                <a class="actualizar_registro borrar_resg" (click)="abrirDeuda()">Adminstrar deuda</a>
+            </div>
+        </div>
+    </div>
+
+</div>

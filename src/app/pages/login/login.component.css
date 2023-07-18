@@ -1,0 +1,11 @@
+.contenedor_imagen_fondo {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://images.ctfassets.net/8lc7xdlkm4kt/6bYolzLQSPgZawCDlHb9qr/ca35368f17fc3143fe969c9b074a73de/mint-apartamentos-barranquilla-sala.jpg');
+    padding: 0px;
+    background-size: cover;
+}
+
+input::placeholder {
+    color: #d4005094;
+}

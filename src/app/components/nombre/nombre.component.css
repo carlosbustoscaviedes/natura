@@ -1,0 +1,26 @@
+.contenedor_ingreso {
+    width: auto;
+    display: flex;
+    float: right;
+    align-items: center;
+    height: 63px;
+    margin-right: 66px;
+}
+
+.ingreso_usuario_ltsx {
+    width: 38px;
+}
+
+.texto-bienvenido {
+    color: #d40050;
+    margin-left: 14px;
+    font-size: 17px;
+}
+
+.cerra_sesion {
+    color: #d40050;
+    margin-left: 14px;
+    font-size: 17px;
+    text-decoration: underline;
+    cursor: pointer;
+}

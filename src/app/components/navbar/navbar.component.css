@@ -1,0 +1,11 @@
+.navbar_crud {
+    width: 100%;
+    display: table;
+    border-bottom: 1px solid #d40050;
+}
+
+.logo_vivienda {
+    width: 207px;
+    padding: 13px 31px;
+    float: left;
+}
